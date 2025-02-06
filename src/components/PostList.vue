@@ -23,7 +23,7 @@
           <th><input type="checkbox" v-model="selectAll" @change="toggleAll" /></th>
           <th>번호</th>
           <th>제목</th>
-          <th>내용</th> <!-- ✅ content 추가 -->
+          <th>내용</th>
         </tr>
       </thead>
       <tbody>
@@ -31,7 +31,7 @@
           <td><input type="checkbox" v-model="selectedPosts" :value="post.id" /></td>
           <td>{{ post.id }}</td>
           <td @click="viewPost(post.id)">{{ post.title }}</td>
-          <td>{{ post.content }}</td> <!-- ✅ content 표시 -->
+          <td>{{ post.content }}</td>
         </tr>
       </tbody>
     </table>
